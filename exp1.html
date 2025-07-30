@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiment 1: HTML Tags Reference</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #1e1e2f;
+      color: #f3f3f3;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .title{
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f1e9ff;
+    }
+
+    .tag-section {
+      border-bottom: 1px solid #444;
+      padding: 20px 0;
+    }
+
+    .tag-name {
+      font-size: 20px;
+      color: #8be9fd;
+      margin-bottom: 5px;
+    }
+
+    .description {
+      color: #cccccc;
+      margin-bottom: 10px;
+    }
+
+    .code {
+      background: #2d2d3a;
+      padding: 10px;
+      border-left: 4px solid #8be9fd;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+      color: #e6db74;
+    }
+
+    .output {
+      background: #31314a;
+      padding: 10px;
+      border: 1px solid #555;
+      color: #fff;
+    }
+
+    .note {
+      font-style: italic;
+      color: #999;
+    }
+
+    a {
+      color: #50fa7b;
+    }
+    table{
+      border-color: #f1e9ff;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Experiment 1: HTML Tags Reference</h1>
+
+  <!-- PART 1: Tags 1–10 -->
+<div class="tag-section">
+  <div class="tag-name">&lt;!-- --&gt; (Comment)</div>
+  <div class="description">Inserts a comment. Not rendered in the browser.</div>
+  <div class="code">&lt;!-- This is a comment --&gt;</div>
+  <div class="output note">(Not visible in browser)</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;a&gt; (Anchor)</div>
+  <div class="description">Creates a hyperlink to another page or site.</div>
+  <div class="code">&lt;a href="https://bing.com"&gt;Link&lt;/a&gt;</div>
+  <div class="output"><a href="https://bing.com" target="_blank">Link</a></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;b&gt; (Bold)</div>
+  <div class="description">Makes the text bold without adding extra importance.</div>
+  <div class="code">&lt;b&gt;Bold Text&lt;/b&gt;</div>
+  <div class="output"><b>Bold Text</b></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;big&gt; (Big)</div>
+  <div class="description">Increases the size of the text. Deprecated in HTML5.</div>
+  <div class="code">&lt;big&gt;Big Text&lt;/big&gt;</div>
+  <div class="output"><big>Big Text</big></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;body&gt; (Body)</div>
+  <div class="description">Defines the main content of the HTML document.</div>
+  <div class="code">&lt;body&gt;Page Content&lt;/body&gt;</div>
+  <div class="output">Page Content</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;br&gt; (Break)</div>
+  <div class="description">Inserts a single line break.</div>
+  <div class="code">Line 1&lt;br&gt;Line 2</div>
+  <div class="output">Line 1<br>Line 2</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;center&gt; (Center)</div>
+  <div class="description">Centers the content. Deprecated in HTML5.</div>
+  <div class="code">&lt;center&gt;Centered&lt;/center&gt;</div>
+  <div class="output"><center>Centered</center></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;dd&gt; (Definition Description)</div>
+  <div class="description">Defines the description of a term in a definition list.</div>
+  <div class="code">&lt;dd&gt;This is a definition&lt;/dd&gt;</div>
+  <div class="output"><dd>This is a definition</dd></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;dl&gt; (Definition List)</div>
+  <div class="description">Defines a list of terms and their descriptions.</div>
+  <div class="code">
+    &lt;dl&gt;<br>
+    &nbsp;&nbsp;&lt;dt&gt;Term&lt;/dt&gt;<br>
+    &nbsp;&nbsp;&lt;dd&gt;Definition&lt;/dd&gt;<br>
+    &lt;/dl&gt;
+  </div>
+  <div class="output">
+    <dl>
+      <dt>Term</dt>
+      <dd>Definition</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;dt&gt; (Definition Term)</div>
+  <div class="description">Defines a term in a definition list.</div>
+  <div class="code">&lt;dt&gt;Term&lt;/dt&gt;</div>
+  <div class="output"><dt>Term</dt></div>
+</div>
+<!-- PART 2: Tags 11–20 -->
+<div class="tag-section">
+  <div class="tag-name">&lt;em&gt; (Emphasis)</div>
+  <div class="description">Displays emphasized text, usually italic.</div>
+  <div class="code">This is &lt;em&gt;important&lt;/em&gt;</div>
+  <div class="output">This is <em>important</em></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;font&gt; (Font)</div>
+  <div class="description">Defines font face, size, and color. Deprecated in HTML5.</div>
+  <div class="code">&lt;font face="Arial"&gt;Text&lt;/font&gt;</div>
+  <div class="output"><font face="Arial">Text</font></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;h1&gt; to &lt;h5&gt; (Headings)</div>
+  <div class="description">Define HTML headings from largest (&lt;h1&gt;) to smallest (&lt;h5&gt;).</div>
+  <div class="code">
+    &lt;h1&gt;Heading&lt;/h1&gt;<br>
+    &lt;h2&gt;Heading&lt;/h2&gt;<br>
+    &lt;h3&gt;Heading&lt;/h3&gt;<br>
+    &lt;h4&gt;Heading&lt;/h4&gt;<br>
+    &lt;h5&gt;Heading&lt;/h5&gt;
+  </div>
+  <div class="output">
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;head&gt; (Head)</div>
+  <div class="description">Contains metadata, scripts, and links. Not visible in the browser.</div>
+  <div class="code">&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;</div>
+  <div class="output note">(Not visible in browser)</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;hr&gt; (Horizontal Rule)</div>
+  <div class="description">Inserts a horizontal line (thematic break).</div>
+  <div class="code">&lt;hr&gt;</div>
+  <div class="output"><hr></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;html&gt; (HTML Root)</div>
+  <div class="description">The root element of an HTML document.</div>
+  <div class="code">&lt;html&gt;&lt;/html&gt;</div>
+  <div class="output note">(Represents the full HTML document)</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;img&gt; (Image)</div>
+  <div class="description">Embeds an image into the document.</div>
+  <div class="code">&lt;img src="image.jpg" width="200"&gt;</div>
+  <div class="output"><img src="https://picsum.photos/200" width="200" alt="Sample Image"></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;input&gt; (Input Field)</div>
+  <div class="description">Creates an interactive input control.</div>
+  <div class="code">&lt;input type="text"&gt;</div>
+  <div class="output"><input type="text" placeholder="Sample input"></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;li&gt; (List Item)</div>
+  <div class="description">Defines an item in a list.</div>
+  <div class="code">&lt;li&gt;Item&lt;/li&gt;</div>
+  <div class="output"><ul><li>Item</li></ul></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;link&gt; (External Resource)</div>
+  <div class="description">Links an external resource like a CSS file. Placed in &lt;head&gt;.</div>
+  <div class="code">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+  <div class="output note">(Not visible in browser)</div>
+</div>
+<!-- PART 3: Tags 21–30 -->
+<div class="tag-section">
+  <div class="tag-name">&lt;marquee&gt; (Marquee)</div>
+  <div class="description">Creates scrolling text. Deprecated in HTML5.</div>
+  <div class="code">&lt;marquee&gt;Scrolling Text&lt;/marquee&gt;</div>
+  <div class="output"><marquee>Scrolling Text</marquee></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;menu&gt; (Menu List)</div>
+  <div class="description">Represents a list/menu of commands. Not commonly used.</div>
+  <div class="code">&lt;menu&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/menu&gt;</div>
+  <div class="output"><menu><li>Item</li></menu></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;meta&gt; (Metadata)</div>
+  <div class="description">Specifies metadata like character encoding, description, etc.</div>
+  <div class="code">&lt;meta name="description" content="HTML tutorial"&gt;</div>
+  <div class="output note">(Not visible in browser)</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;ol&gt; (Ordered List)</div>
+  <div class="description">Defines a numbered list of items.</div>
+  <div class="code">
+    &lt;ol&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+    &lt;/ol&gt;
+  </div>
+  <div class="output">
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+    </ol>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;option&gt; (Select Option)</div>
+  <div class="description">Defines an option inside a &lt;select&gt; dropdown.</div>
+  <div class="code">
+    &lt;select&gt;<br>
+    &nbsp;&nbsp;&lt;option&gt;Option 1&lt;/option&gt;<br>
+    &nbsp;&nbsp;&lt;option&gt;Option 2&lt;/option&gt;<br>
+    &lt;/select&gt;
+  </div>
+  <div class="output">
+    <select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;p&gt; (Paragraph)</div>
+  <div class="description">Defines a block of paragraph text.</div>
+  <div class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+  <div class="output"><p>This is a paragraph.</p></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;small&gt; (Small Text)</div>
+  <div class="description">Renders text in a smaller font size.</div>
+  <div class="code">&lt;small&gt;Small text&lt;/small&gt;</div>
+  <div class="output"><small>Small text</small></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;strike&gt; (Strikethrough)</div>
+  <div class="description">Displays text with a line through it. Deprecated in favor of &lt;del&gt;.</div>
+  <div class="code">&lt;strike&gt;Struck text&lt;/strike&gt;</div>
+  <div class="output"><strike>Struck text</strike></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;strong&gt; (Strong Importance)</div>
+  <div class="description">Indicates strong importance. Typically bold.</div>
+  <div class="code">&lt;strong&gt;Important&lt;/strong&gt;</div>
+  <div class="output"><strong>Important</strong></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;table&gt; (Table)</div>
+  <div class="description">Creates a table layout for structured data.</div>
+  <div class="code">
+    &lt;table border="1"&gt;<br>
+    &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;/tr&gt;<br>
+    &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;D&lt;/td&gt;&lt;/tr&gt;<br>
+    &lt;/table&gt;
+  </div>
+  <div class="output">
+    <table border="1">
+      <tr><td>A</td><td>B</td></tr>
+      <tr><td>C</td><td>D</td></tr>
+    </table>
+  </div>
+</div>
+<!-- PART 4: Tags 31–40 -->
+<div class="tag-section">
+  <div class="tag-name">&lt;td&gt; (Table Data)</div>
+  <div class="description">Defines a cell in a table.</div>
+  <div class="code">
+    &lt;table border="1"&gt;<br>
+    &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;Cell&lt;/td&gt;&lt;/tr&gt;<br>
+    &lt;/table&gt;
+  </div>
+  <div class="output">
+    <table border="1"><tr><td>Cell</td></tr></table>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;th&gt; (Table Header)</div>
+  <div class="description">Specifies a header cell in a table.</div>
+  <div class="code">
+    &lt;table border="1"&gt;<br>
+    &nbsp;&nbsp;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;/tr&gt;<br>
+    &lt;/table&gt;
+  </div>
+  <div class="output">
+    <table border="1"><tr><th>Header</th></tr></table>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;title&gt; (Document Title)</div>
+  <div class="description">Sets the title of the page shown in the browser tab.</div>
+  <div class="code">&lt;title&gt;My Webpage&lt;/title&gt;</div>
+  <div class="output note">(Displays in the browser tab, not in page)</div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;tr&gt; (Table Row)</div>
+  <div class="description">Defines a row in a table.</div>
+  <div class="code">
+    &lt;table border="1"&gt;<br>
+    &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;Row&lt;/td&gt;&lt;/tr&gt;<br>
+    &lt;/table&gt;
+  </div>
+  <div class="output">
+    <table border="1"><tr><td>Row</td></tr></table>
+  </div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;u&gt; (Underline)</div>
+  <div class="description">Renders underlined text.</div>
+  <div class="code">&lt;u&gt;Underlined&lt;/u&gt;</div>
+  <div class="output"><u>Underlined</u></div>
+</div>
+
+<div class="tag-section">
+  <div class="tag-name">&lt;ul&gt; (Unordered List)</div>
+  <div class="description">Defines a bulleted list of items.</div>
+  <div class="code">
+    &lt;ul&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+    &lt;/ul&gt;
+  </div>
+  <div class="output">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
