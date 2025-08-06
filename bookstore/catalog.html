@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookstore Catalogue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2d7d9; /* Soft background */
+    }
+
+
+
+    /* Layout */
+    .container {
+      display: flex;
+      height: calc(100vh - 65px); /* adjust if navbar height changes */
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 20%;
+      background-color: #fceef1; /* Soft pink shade */
+      padding: 20px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 15px 0;
+      color: #4a4a4a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #6dc7d1;
+    }
+
+    /* Main content */
+    .main-content {
+      width: 80%;
+      background-color: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+      <div class="logo">
+        <img src=".\pics\Pondy_Univ_logo1.png" alt="Institution Logo">
+        <span>Pondicherry University</span>
+      </div>
+
+      <div class="links">
+        <a href="homepage.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="cse.html" target="contentFrame">CSE</a>
+      <a href="ece.html" target="contentFrame">ECE</a>
+      <a href="eee.html" target="contentFrame">EEE</a>
+      <a href="civil.html" target="contentFrame">CIVIL</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <iframe src="cse.html" name="contentFrame"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
